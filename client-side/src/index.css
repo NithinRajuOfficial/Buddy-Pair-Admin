@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tooltip-custom {
+  z-index: 9999;
+}
+
+.Toastify__toast-container {
+  z-index: 99999 !important;
+}
