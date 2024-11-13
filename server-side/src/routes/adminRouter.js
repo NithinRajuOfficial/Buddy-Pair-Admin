@@ -1,5 +1,15 @@
 import { Router } from "express";
 
-const router = Router()
+import {
+  adminLogin,
+  renewalOfAccessToken,
+} from "../utils/export&importJunction.js";
+const router = Router();
 
-export default router
+// renewal of accessToken
+router.route("/refresh-token").post(renewalOfAccessToken);
+
+// admin login
+router.route("/login").post(adminLogin);
+
+export default router;

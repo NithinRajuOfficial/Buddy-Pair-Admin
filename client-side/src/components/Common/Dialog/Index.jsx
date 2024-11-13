@@ -35,6 +35,6 @@ export default DialogBox;
 DialogBox.propTypes = {
   scale: PropTypes.object.isRequired,
   isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
+  onClose: PropTypes.func,
   children: PropTypes.node.isRequired,
 };
