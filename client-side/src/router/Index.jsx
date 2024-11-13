@@ -7,11 +7,19 @@ import {
 } from "react-router-dom";
 
 const Layout = lazy(() => import("../components/Layout/Index"));
+const AdminDashboard = lazy(() =>
+  import("../components/Layout/Dashboard/Index")
+);
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     // Admin Routes
-    <Route key={"/"} path="/" element={<Layout />}>
+    <Route
+      key={"/admin/dashboard"}
+      path="/admin/dashboard"
+      element={<Layout />}
+    >
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
     </Route>,
   ])
 );

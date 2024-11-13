@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar/Index.jsx";
+import AdminSidebar from "./Sidebar/Index.jsx";
 
-const Layout = () => {
+const AdminLayout = () => {
   return (
-    <>
-      <Sidebar />
-      <Outlet />
-    </>
+    <div className="flex">
+      <AdminSidebar />
+      <div className="flex-grow">
+        {/* This will render the nested route like /admin/login */}
+        <Outlet />
+      </div>
+    </div>
   );
 };
 
-export default Layout;
+export default AdminLayout;
