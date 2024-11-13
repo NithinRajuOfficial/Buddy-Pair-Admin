@@ -51,8 +51,8 @@ import {
               <ListItemPrefix>
                 <ShoppingBagIcon className="h-5 w-5" />
               </ListItemPrefix>
-              E-Commerce
-            </NavLink>
+              User Management
+              </NavLink>
           </ListItem>
           <ListItem>
             <NavLink
